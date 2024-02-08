@@ -14,6 +14,7 @@
 			<p>Let Us Know How We can Improve Our Website</p>
 
 			<form action="#" method="post">
+				<!-- Here we ask the User for their name and email -->
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" placeholder="Muhammed" required />
 
@@ -22,6 +23,28 @@
 
 				<label for="age">Age:</label>
 				<input type="number" id="age" name="age" placeholder="Enter Your Age" required />
+
+				<!-- Here we ask the User about their position/role -->
+				<label for="role">Role:</label>
+				<select id="role" name="role">
+					<option value="hobbist">Hobbist</option>
+					<option value="professional">Professional</option>
+					<option value="enterprise">Enterprise</option>
+					<option value="other">Other</option>
+				</select>
+
+				<!-- The User is prompted with a radio button on if they'd recommend us -->
+				<div class="referral-section">
+					<p>How Likely are you to recommend us to a friend?</p>
+					<label for="recommend1"> <input type="radio" id="recommend1" name="recommend" value="1" required /> Unlikely </label>
+					<label for="recommend2"> <input type="radio" id="recommend2" name="recommend" value="2" /> Maybe </label>
+					<label for="recommend3"> <input type="radio" id="recommend3" name="recommend" value="3" /> Likely </label>
+					<label for="recommend4"> <input type="radio" id="recommend4" name="recommend" value="4" /> Very likely </label>
+				</div>
+
+				<!-- The User inputs their feedback into a text area here -->
+				<p>What is the most important reason for your score?</p>
+				<textarea id="feedback" name="feedback" placeholder="Explain Your Reasoning" required></textarea>
 			</form>
 		</main>
 	</body>
