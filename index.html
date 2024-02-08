@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Survey <Form></Form></title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
@@ -15,14 +16,18 @@
 
 			<form action="#" method="post">
 				<!-- Here we ask the User for their name and email -->
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" placeholder="Muhammed" required />
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" placeholder="Enter Your Email" required />
-
-				<label for="age">Age:</label>
-				<input type="number" id="age" name="age" placeholder="Enter Your Age" required />
+				<div class="personal-info">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Muhammed" required />
+				</div>
+				<div class="personal-info">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+				</div>
+				<div class="personal-info">
+					<label for="age">Age:</label>
+					<input type="number" id="age" name="age" placeholder="Enter Your Age" required />
+				</div>
 
 				<!-- Here we ask the User about their position/role -->
 				<label for="role">Role:</label>
@@ -54,6 +59,9 @@
 				<label for="improvement1"> <input type="checkbox" id="improvement1" name="improvement1" value="1" /> Better Service </label>
 				<label for="improvement2"> <input type="checkbox" id="improvement2" name="improvement2" value="2" /> More Projects </label>
 				<label for="improvement3"> <input type="checkbox" id="improvement3" name="improvement3" value="3" /> More Open Source Code </label>
+
+				<!-- The User is prompted with a submit button to submit their form -->
+				<button type="submit">Submit</button>
 			</form>
 		</main>
 	</body>

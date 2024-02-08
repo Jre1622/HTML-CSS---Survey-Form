@@ -1,0 +1,25 @@
+:root {
+	--primary-color: #f3f3f3;
+	--secondary-color: #333;
+}
+
+* {
+	box-sizing: border-box;
+	background-color: rgb(153, 211, 202);
+	font-family: "Courier New", Courier, monospace;
+}
+
+header,
+p {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	align-items: center;
+	gap: 1rem;
+	width: 80%;
+	margin: 0 auto;
+}
